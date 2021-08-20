@@ -1,0 +1,13 @@
+name: API FOR Deployment
+
+on:
+  push:
+    branches: [ master ]
+jobs:
+
+  curl:
+    runs-on: ubuntu-latest
+    steps:
+    - name: curl
+      run: |              
+       curl -i -u Sanjeevani198:$Token https://api.github.com/KalpanaAddagada/Javawar/deployments
